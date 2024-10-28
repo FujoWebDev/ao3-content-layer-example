@@ -1,1 +1,10 @@
+---
+import { getCollection, getEntry } from "astro:content";
+
+const fanfictions = await getCollection("fanfictions");
+---
+
 <h1>Hello fujin</h1>
+<pre>
+    {fanfictions.map(fic => `${fic.data.title} by ${fic.data.authors[0].pseud} (${fic.data.rating})` )}
+</pre>
