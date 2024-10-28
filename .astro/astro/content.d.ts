@@ -144,7 +144,14 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		"fanfictions": Record<string, {
+		"ao3": {
+"works": {
+	id: "works";
+  collection: "ao3";
+  data: any
+};
+};
+"fanfictions": Record<string, {
   id: string;
   collection: "fanfictions";
   data: any;
