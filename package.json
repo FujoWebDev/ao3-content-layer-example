@@ -12,7 +12,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@bobaboard/ao3.js": "^0.16.0",
+    "@bobaboard/ao3.js": "0.16.1",
     "astro": "^4.16.7"
   }
 }

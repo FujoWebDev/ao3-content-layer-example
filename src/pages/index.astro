@@ -5,6 +5,12 @@ const fanfictions = await getCollection("fanfictions");
 ---
 
 <h1>Hello fujin</h1>
-<pre>
-    {fanfictions.map(fic => `${fic.data.title} by ${fic.data.authors[0].pseud} (${fic.data.rating})` )}
-</pre>
+<ul>
+  {
+    fanfictions.map((fic) => (
+      <li>
+        {fic.data.title} by {fic.data.authors[0].pseud} ({fic.data.rating})
+      </li>
+    ))
+  }
+</ul>
