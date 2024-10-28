@@ -1,0 +1,17 @@
+{
+  "name": "ao3-content-layer",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "astro": "^4.16.7"
+  }
+}
