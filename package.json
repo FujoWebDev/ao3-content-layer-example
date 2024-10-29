@@ -13,7 +13,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@fujocoded/astro-ao3-loader": "0.0.2",
+    "@fujocoded/astro-ao3-loader": "^0.0.3",
     "astro": "^4.16.7"
   }
 }

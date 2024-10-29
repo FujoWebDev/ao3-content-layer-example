@@ -159,9 +159,10 @@ declare module 'astro:content' {
     locked: false;
     title: string;
     rating: "Not Rated" | "General Audiences" | "Teen And Up Audiences" | "Mature" | "Explicit";
-    authors: "Anonymous" | {
+    authors: {
         username: string;
         pseud: string;
+        anonymous: boolean;
     }[];
 } | {
     id: string;
