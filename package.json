@@ -3,7 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "astro dev"
+    "dev": "astro dev",
+    "build": "astro build"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -12,8 +13,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@bobaboard/ao3.js": "0.16.1",
-    "astro": "^4.16.7",
-    "yaml": "^2.6.0"
+    "@fujocoded/astro-ao3-loader": "0.0.2",
+    "astro": "^4.16.7"
   }
 }

@@ -1,15 +1,3 @@
 # ao3-content-layer
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+An example of using ["@fujocoded/astro-ao3-loader](https://github.com/FujoWebDev/fujocoded-plugins/tree/main/astro-ao3-loader) with Astro.
