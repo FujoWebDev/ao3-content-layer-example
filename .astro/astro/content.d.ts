@@ -154,7 +154,19 @@ declare module 'astro:content' {
 "fanfictions": Record<string, {
   id: string;
   collection: "fanfictions";
-  data: InferEntrySchema<"fanfictions">;
+  data: {
+    id: string;
+    locked: false;
+    title: string;
+    rating: "Not Rated" | "General Audiences" | "Teen And Up Audiences" | "Mature" | "Explicit";
+    authors: "Anonymous" | {
+        username: string;
+        pseud: string;
+    }[];
+} | {
+    id: string;
+    locked: true;
+};
   rendered?: RenderedContent;
   filePath?: string;
   body?: string 
