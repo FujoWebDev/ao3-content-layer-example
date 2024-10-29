@@ -154,7 +154,7 @@ declare module 'astro:content' {
 "fanfictions": Record<string, {
   id: string;
   collection: "fanfictions";
-  data: any;
+  data: InferEntrySchema<"fanfictions">;
   rendered?: RenderedContent;
   filePath?: string;
   body?: string 

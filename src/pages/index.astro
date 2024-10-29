@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
 const fanfictions = await getCollection("fanfictions");
 ---
@@ -7,10 +7,16 @@ const fanfictions = await getCollection("fanfictions");
 <h1>Hello fujin</h1>
 <ul>
   {
-    fanfictions.map((fic) => (
-      <li>
-        {fic.data.title} by {fic.data.authors[0].pseud} ({fic.data.rating})
-      </li>
-    ))
+    fanfictions.map((fic) =>
+      fic.data.locked ? (
+        <li>Locked</li>
+      ) : (
+        <li>
+          {fic.data.title} by{" "}
+          {typeof fic.data.authors[0] == "object" && fic.data.authors[0].pseud}{" "}
+          ({fic.data.rating})
+        </li>
+      )
+    )
   }
 </ul>
